@@ -1,0 +1,53 @@
+.header-hide{
+    display: none;
+}
+
+.move-in{
+    transform: translateY(100px);
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.move-in:nth-of-type(2){
+    transition-delay: 0.2s;
+}
+
+.move-in:nth-of-type(3){
+    transition-delay: 0.4s;
+}
+
+.move-up{
+    transform: translateY(100px);
+    transition: 0.8s;
+    opacity: 0;
+}
+
+.show {
+    transform : none;
+    opacity: 1;
+}
+
+
+
+@media screen and (max-width: 1239px){
+
+    .move-in{
+        transform: translateX(-100px);
+        transition: 0.4s;
+        opacity: 0;
+    }
+
+    .move-in:nth-of-type(2){
+        transition-delay: 0.4s;
+    }
+    
+    .move-in:nth-of-type(3){
+        transition-delay: 0.8s;
+    }
+
+    .show {
+        transform : none;
+        opacity: 1;
+    }
+    
+}
